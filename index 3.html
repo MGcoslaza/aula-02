@@ -1,0 +1,30 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Teste OBJECTS</title>
+  </head>
+  <body>
+    <script>
+        var dados = {
+          Nome:"Maria",
+          Sobrenome: "Gabriela",
+          endereço: {
+            Rua: "rua lalala",
+            cep: "000000-000",
+            número: "1111",
+            Complemento: "apartamento 2",
+            Bairro: "jardim das flores",
+            Cidade: "Maringá",
+            Estado: "Paraná",
+          },
+          ShowInfo: function (){
+            alert("Nome: "+ this.Nome + ", Sobrenome: " + this.Sobrenome + ", Endereço: " + this.endereço.Rua +
+             ", Cep: " + this.endereço.cep + ", Número: " + this.endereço.número +", Complemento: " +
+             this.endereço.Complemento + ", Bairro: " + this.endereço.Bairro + ", Cidade: " +
+             this.endereço.Cidade + ", Estado: " + this.endereço.Estado);
+          }
+        }
+        dados.ShowInfo();
+        </script>
+  </body>
+</html>
